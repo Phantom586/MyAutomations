@@ -3,8 +3,8 @@ import shutil
 import platform
 
 BASE_DIR = "C:\\Users\\"
-# username
-usr = "Phantom"
+# Specify your username here
+usr = "Test123"
 # working Directory
 wdir = "Desktop"
 
@@ -41,7 +41,6 @@ elif OS == "Mac":
     print("    [Mac] - '/Users/right_here/home'")
 
 
-# usr = input()
 # Creating an absolute path to Desktop
 path = os.path.join(BASE_DIR, usr, wdir)
 print(path)
@@ -108,5 +107,3 @@ for f in os.listdir():
         print("Moving From : ", os.path.join(path, f_name+f_ext), "To : ", os.path.join(path, dest_folder))
         shutil.move(os.path.join(path, f_name+f_ext), os.path.join(path, dest_folder))
 
-
-# shutil.move(path+"\\Clever Programmer(Webinar) 9 November.txt", path+"\\Files\\")
