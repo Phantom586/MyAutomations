@@ -105,5 +105,6 @@ for f in os.listdir():
 
     
         print("Moving From : ", os.path.join(path, f_name+f_ext), "To : ", os.path.join(path, dest_folder))
+        # copying files to their categorical Folders.
         shutil.move(os.path.join(path, f_name+f_ext), os.path.join(path, dest_folder))
 
